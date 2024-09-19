@@ -1,5 +1,48 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## How to create and use vue components using Veaury in Next.js  
+> [!NOTE]
+> 
+> If you want to use the vue component in `node_modules` directly, you can refer to the development part directly, and just install `veaury@^2.5` and `vue`.  
+
+### Install dependencies  
+You need to install the following dependencies.  
+`veaury@^2.5`, `vue`,`vue-loade`,`@vue/babel-plugin-jsx`,`webpack`,`style-loader`,`css-loader`,`babel-loader`,`@babel/core`
+
+### Configuration on build
+You need to configure `next.config.mjs`  
+```js
+// If the type is "commonjs", use "veaury/webpack/VeauryVuePlugin.cjs"
+import VeauryVuePlugin from "veaury/webpack/VeauryVuePlugin.mjs";
+
+/** @type {import('next').NextConfig} */
+
+const nextConfig = {
+  webpack(config) {
+    config.plugins.unshift(new VeauryVuePlugin({
+      isNext: true
+    }))
+    return config;
+  }
+};
+
+export default nextConfig;
+```
+### Development  
+The components output using `Veaury` are client components. In Next.js, add `use client` to the top of the file.  
+```jsx
+'use client'
+
+// After being converted by Veaury, the component is a client component
+import { applyVueInReact } from 'veaury'
+import TestVue from './Test.vue'
+const Test = applyVueInReact(TestVue)
+
+export default Test
+```
+### JSX in Vue
+If you need to use JSX in Vue, you can use it in `<script lang="jsx">` in the '.vue' file or in the '.jsx' file in the 'vue_app' directory
+
 ## Getting Started
 
 First, run the development server:

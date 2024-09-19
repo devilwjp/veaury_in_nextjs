@@ -1,14 +1,18 @@
 <template>
   <div class="vue-background">
-    <div>This is a Vue Component!</div>
-    <div>I am {{foo}}!</div>
+    <B>
+      The component should use client-side rendering.
+    </B>
+    <component :is="VNode"/>
+    <Zoo/>
   </div>
 </template>
 
-<script setup>
-// import './test.css'
+<script setup lang="jsx">
 import { ref } from 'vue'
-const foo = ref('Foo')
+import Zoo from './vue_app/TestJSXInVue.jsx'
+// JSX in Vue
+const VNode = <div>This is a Vue Component!</div>
 </script>
 
 <style scoped>
