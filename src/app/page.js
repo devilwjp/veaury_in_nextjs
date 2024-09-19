@@ -6,14 +6,21 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+        <div>
+          <Image
+            className={styles.logo}
+            src="https://nextjs.org/icons/next.svg"
+            alt="Next.js logo"
+            width={180}
+            height={38}
+            priority
+          />
+          <img
+            src="https://github.com/devilwjp/VueReact/assets/38802722/dd7ccd14-4e02-4f4c-bf59-bc0f95088d82"
+            height={60}
+            style={{marginLeft: 20}}
+          />
+        </div>
         <ClientTest/>
         <ol>
           <li>

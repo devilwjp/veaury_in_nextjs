@@ -9,10 +9,9 @@
 </template>
 
 <script setup lang="jsx">
-import { ref } from 'vue'
 import Zoo from './vue_app/TestJSXInVue.jsx'
 // JSX in Vue
-const VNode = <div>This is a Vue Component!</div>
+const VNode = <div style={{color: 'green', fontWeight: 'bold'}}>This is a Vue Component!</div>
 </script>
 
 <style scoped>
