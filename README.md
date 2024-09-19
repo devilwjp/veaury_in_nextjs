@@ -1,9 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## How to create and use vue components using Veaury in Next.js  
+## How to create and use Vue components using Veaury in Next.js  
 > [!NOTE]
 > 
-> If you want to use the vue component in `node_modules` directly, you can refer to the development part directly, and just install `veaury@^2.5` and `vue`.  
+> If you want to use the Vue component in `node_modules` directly, you can refer to the development part directly, and just install `veaury@^2.5` and `vue`.  
 
 ### Install dependencies  
 You need to install the following dependencies.  
