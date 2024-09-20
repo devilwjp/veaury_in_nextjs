@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ### Install dependencies  
 You need to install the following dependencies.  
-`veaury@^2.5`, `vue`,`vue-loade`,`@vue/babel-plugin-jsx`,`webpack`,`style-loader`,`css-loader`,`babel-loader`,`@babel/core`
+`veaury@^2.5`, `vue`,`vue-loader`,`@vue/babel-plugin-jsx`,`webpack`,`style-loader`,`css-loader`,`babel-loader`,`@babel/core`
 
 ### Configuration on build
 You need to configure `next.config.mjs`  
@@ -41,7 +41,7 @@ const Test = applyVueInReact(TestVue)
 export default Test
 ```
 ### JSX in Vue
-If you need to use JSX in Vue, you can use it in `<script lang="jsx">` in the '.vue' file or in the '.jsx' file in the 'vue_app' directory
+If you need to use JSX in Vue, you can use it in `<script lang="jsx">` in the `.vue` file or in the `.jsx` file in the `vue_app` directory
 
 ## Getting Started
 
